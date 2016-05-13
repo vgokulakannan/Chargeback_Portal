@@ -1,6 +1,5 @@
 # Chargeback_Portal
 
-
 #SetUp
 
 **Note:** Make sure you have installed NodeJS. Please visit https://nodejs.org/ for instructions on how to install.

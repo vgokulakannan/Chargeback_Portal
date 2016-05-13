@@ -1,0 +1,13 @@
+{
+  "name": "MyApp",
+   "description": "Test App in AngularJS",
+  "version": "0.0.0",
+ 
+  "dependencies": {
+    "angular": "1.4.x",
+    "angular-mocks": "1.4.x",
+    "angular-ui-router":"*",
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.1.1"
+  }
+}

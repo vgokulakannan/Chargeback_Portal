@@ -1,18 +1,23 @@
- <div>
-            <form>
-                <div >
+<!-- Div to show portal logo in the left -->
+<div style="float:left;width:25%;height:100%;position:relative;">
+    <img style="position:absolute;top:50%; margin-top:-250px;left:50%;margin-left:-100px" src="./www/images/main.png">
+    
+</div>
+
+<!-- Div to show login form -->
+<div style="float:right;width:75%;height:100%;position:relative;">
+            <form name="userForm" ng-submit="loginUser()" ng-controller="loginCtrl">
+                <div style="position:absolute;top:50%; margin-top:-250px;left:50%;margin-right:-100px" >
                     <label >
-                        <label >User Name</label>
-                        <input type="text" ng-model="user.username">
+                        <label style="font-weight:bold;font-size:20px;">Login</label>
+                    </br>
+                        <input  type="text" name="username" placeholder="Username" ng-model="user.username" required>
                     </label>
                     <label >
-                        <label >Password</label>
-                        <input type="password" ng-model="user.password">
+                        <input type="password" name="password" placeholder="Password" ng-model="user.password" required>
                     </label>
-                </div>
+                    <input type="submit" id="but" ng-disabled="userForm.username.$dirty && userForm.username.$invalid  ||  userForm.password.$dirty && userForm.password.$invalid">
+                </div>  
             </form>
-        </div>
-        <div>
-            <button  type="button" ng-click="loginUser(user)">Login</button>
-            
-        </div>
+</div>
+

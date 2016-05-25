@@ -1,9 +1,22 @@
-<html>
-<body>
 
+<div align="justify" >
+<ul class="department-list small-block-grid-4">
+      <li ng-repeat="dept in departments">
+        <figure>
+          <img ng-src="{{dept.image}}">
+          <figcaption>
+            <h3>{{dept.department}}</h3>
+            
+            <button id="but" ng-click="viewDeptBill(dept);">View Bill</button>
+            <button id="but" ng-click="registerService(dept);">Add Usage</button>
 
-lkjsdfgsdfgjsdflghskdfngkj
+          </figcaption>
+        </figure>
+      </li>
+</ul>
+</div>
 
-</body>
+<div align="center">
+  <button ng-click="viewBill()">View Usage</button>
 
-</html>
+</div>

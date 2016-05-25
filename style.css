@@ -1,0 +1,220 @@
+th{
+  cursor: pointer;
+}
+
+.sort-icon{
+  font-size :9px;
+  margin-left: 5px;
+}
+
+body{
+  background:Darkcyan;
+}
+.region {
+  width:50%;
+  border-radius: 3px;
+  padding: 10px;
+  margin-left:300px;
+  margin-right:200px;
+  margin-top:100px;
+  margin-bottom:200px; 
+}
+#total{
+  width:100%;
+  padding:12px 20px;
+  display:inline-block;
+  border:1px solid #ccc
+  border-radius:8px;
+  box-sizing: border-box; 
+}
+#reg{
+  width:100%;
+  padding:12px 20px;
+  display:inline-block;
+  border:1px solid #ccc
+  border-radius:8px;
+  box-sizing: border-box;
+}
+#ser{
+  width:100%;
+  padding:12px 20px;
+  display:inline-block;
+  border:1px solid #ccc
+  border-radius:8px;
+  box-sizing: border-box;
+}
+#flav{
+  width:100%;
+  padding:12px 20px;
+  display:inline-block;
+  border:1px solid #ccc
+  border-radius:8px;
+  box-sizing: border-box;
+}
+#dept{
+  width:100%;
+  padding:12px 20px;
+  display:inline-block;
+  border:1px solid #ccc
+  border-radius:8px;
+  box-sizing: border-box;
+}
+
+#sub{
+  width: 100%;
+  background-color: #a6a6a6;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #262626;
+}
+
+
+
+
+
+#colordiv {background:cyan;width:100%;}
+
+
+#header {
+    background-color:white;
+    
+    text-align:center;
+    padding:5px;
+}
+
+#footer {
+    background-color:white;
+    color:blue;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+
+#section {
+    width:350px;
+    
+    padding:10px; 
+}
+
+
+
+.department-list {
+      margin: -1px -48px 170px -50px;
+}
+
+.department-list figure {
+  max-width: 100%;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+.department-list figure img {
+  position: relative;
+  transition: transform 0.4s;
+  height: 233px;
+  width: 256px;
+}
+/*#but:hover {
+    background-color: #4CAF50; 
+    color: white;
+}*/
+#but {
+  width :107px;
+  height: 28px;
+  border-width: 0px;
+    cursor: pointer;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0 0 1.25rem;
+    position: relative;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    display: inline-block;
+    /* padding-top: 1rem; */
+    /* padding-right: 2rem; */
+    /* padding-bottom: 1.0625rem; */
+    /* padding-left: 2rem; */
+    font-size: 1rem;
+    background-color: #008cba;
+    border-color: #007095;
+    color: white;
+    transition: background-color 300ms ease-out;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+button,.button {
+    
+    border-width: 0px;
+    cursor: pointer;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0 0 1.25rem;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    display: inline-block;
+    /* padding-top: 1rem; */
+    /* padding-right: 2rem; */
+    /* padding-bottom: 1.0625rem; */
+    /* padding-left: 2rem; */
+    font-size: 0.8rem;
+    background-color: #008cba;
+    border-color: #007095;
+    color: white;
+    transition: background-color 300ms ease-out;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+}
+.department-list figcaption {
+       position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+     /*text-align: center; */
+    padding: 4px;
+    height: 70px;
+    width: 233px;
+    background: #2c3f52;
+    color: lightgray;
+    transform: translateY(100%);
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+
+
+
+.department-list figcaption h3 {
+  margin: 0 0 8px;
+  padding: 0;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.department-list figure:hover img {
+  transform: translateY(-50px);
+}
+
+.department-list figure:hover figcaption {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: transform 0.4s, opacity 0.1s;
+}

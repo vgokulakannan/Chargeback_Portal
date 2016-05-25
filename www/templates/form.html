@@ -1,0 +1,34 @@
+<!-- <h1 align="center">ADMIN FORM</h1> -->
+<form ng-submit="serviceregister()" ng-controller="insertCtrl">
+<div class="region">
+<label>Select region </label>
+<select id="reg" ng-model=servicedata.region> 
+	<option value="us-east-1">us-east-1</option>
+	<option value="region2">Region 2</option>
+</select><br />
+<label>Select Services</label>
+<select id="ser" ng-model=servicedata.service>
+	<option value="other">other</option>
+	<option value="service1">Service 1</option>
+	<option value="EC2">EC2</option>
+</select><br />
+<label>Select Flavor</label>
+<select id="flav" ng-model=servicedata.flavor>
+	<option value="other">other</option>
+	<option value="t2.small">t2.small</option>
+	<option value="t2.micro">t2.micro</option>
+	<option value="t2.nano">t2.nano</option>
+</select><br />
+<label>Choose Department</label>
+<select id="dept" ng-model=servicedata.dept>
+	<option value="other">other</option>
+	<option value="1">Dev</option>
+	<option value="2">QA</option>
+	<option value="3">Devops</option>
+	<option value="4">Management</option>
+</select><br />
+<label>Total Hours</label>
+<input type="text" placeholder="totalhours" id="total" ng-model=servicedata.tothours><br/>
+<input type="submit" id="sub" value="Submit">
+</div>
+</form>

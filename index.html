@@ -5,14 +5,34 @@
   <title>Home Page</title>
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
   <!-- <link rel="stylesheet" href="css/app.css"> -->
-  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/Chart.js/Chart.js"></script>
+  <script src="/bower_components/angular-chart.js/dist/angular-chart.min.js"></script>
+  <script src="/bower_components/angular-utils-pagination/dirPagination.js"></script> 
   <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
   <script src="./www/js/app.js"></script> 
+  <link rel="stylesheet" href="style.css"/>
+
+  <link rel="stylesheet" href="/bower_components/angular-chart.js/dist/angular-chart.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.0/css/normalize.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.4.0/css/foundation.css"/>
+</script>
+<!-- style="float:left;width:100%;height:20%;position:relative;" -->
+<!-- style="position:absolute;top:20%; left:10%;margin-left:-100px"  -->
 </head>
-<body ng-controller = "loginCtrl">
 
- <div ui-view> </div>
+<body >
+<div id="header">
+    <img src="./www/images/logo.png">
+</div>
 
+   <div ui-view="application" style="width:100%;height:100%;position:relative;"> </div>
+
+ 
+<div id="footer">
+  <img src="./www/images/logo.png">
+Copyright © gquotient.com
+</div>
 
 </body>
 </html>

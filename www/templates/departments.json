@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "department": "Development",
+    "image": "./www/images/software_dev.jpg"
+  },
+  {
+    "id": 2,
+    "department": "Quality Assurance",
+    "image": "./www/images/qa.jpg"
+  },
+  {
+    "id": 3,
+    "department": "Management",
+    "image": "./www/images/management.png"
+  },
+  {
+    "id": 4,
+    "department": "Operations",
+    "image": "./www/images/ops.jpg"
+  }
+]

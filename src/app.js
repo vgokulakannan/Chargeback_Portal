@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('myApp',['ui.router']);
+var app = angular.module('myApp',['ui.router','angularUtils.directives.dirPagination','chart.js']);
 
 app.run(function ($state){
 
@@ -15,28 +15,61 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 $stateProvider
       .state('dashboard', {
             url: "/dashboard",
-                  templateUrl: "./www/templates/admindashboard.html"
-                  //controller: 'dashCtrl'
+            views : {
+              'application':{
+                  templateUrl: "./www/templates/admindashboard.html",
+                  controller: 'adminCtrl'
                 }
+              }
+            }
         )
+
+      .state('deptbill', {
+        url : "/getBill/:deptid",
+        views : {
+          'application':{
+            templateUrl : "./www/templates/bill.html",
+            controller : 'deptBillCtrl'
+            // params:{
+            //   deptid : null
+            // }
+          }
+        }
+      }
+      )
+
+      .state('bill', {
+        url : "/usage_bill",
+        views : {
+          'application':{
+            templateUrl : "./www/templates/bill.html",
+            controller : 'billCtrl'
+          }
+        }
+      }
+      )
+
+      .state('addservice', {
+        url : "/add",
+        views : {
+          'application':{
+            templateUrl : "./www/templates/form.html",
+            controller : 'insertCtrl'
+          }
+        }
+      }
+      )
 
       .state('main',{
         url : "/menu",
-        // views : {
-        //   'login':{
+        views : {
+          'application':{
                     templateUrl : "./www/templates/main.html",
                     controller : 'loginCtrl'
-                //   }
-                // }
+                  }
+                }
       })
 
-     // $urlRouterProvider.otherwise('main')
-
-      // .state('main',{
-
-      //     url:"/",
-      //     templateUrl : "templates/main.html"
-      //   }
-      // )
+     
 });
 

@@ -1,0 +1,65 @@
+<div role="main" class="container theme-showcase">
+      <div class="" style="margin-top:90px;">
+        <div class="col-lg-8">
+		
+			<div class="bs-component" >
+				<!-- <div class="alert alert-info">
+						<p>Sort key: {{sortKey}}</p>
+						<p>Reverse: {{reverse}}</p>
+					<p>Search String : {{search}}</p>
+				</div> -->
+				<!-- <form class="form-inline">
+					<div class="form-group">
+						<label >Search</label>
+						<input type="text" ng-model="search" class="form-control" placeholder="Search">
+					</div>
+				</form>
+	 -->
+			<table class="table table-stripped table-hover">
+					<thead>
+						<tr>
+							<th ng-click="sort('region')">Region
+								<span class="glyphicon sort-icon"  ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+							</th>
+							<th ng-click="sort('service')">Service
+								<span class="glyphicon sort-icon"  ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+							</th>
+							<th ng-click="sort('flavor')">Flavor
+								<span class="glyphicon sort-icon" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+							</th>
+							<th ng-click="sort('price')">Price
+								<span class="glyphicon sort-icon"  ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+							</th>
+							<th ng-click="sort('dept_name')">Department Name
+								<span class="glyphicon sort-icon"  "sortKey=='dept_name'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+							</th>
+							<th ng-click="sort('total_hrs')">Total Hours
+								<span class="glyphicon sort-icon"  ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+							</th>
+							<th ng-click="sort('total_price')">Total Price
+								<span class="glyphicon sort-icon"  ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr dir-paginate="user in users|orderBy:sortKey:reverse|itemsPerPage:10">
+							<td>{{user.region}}</td>
+							<td>{{user.service}}</td>
+							<td>{{user.flavor}}</td>
+							<td>{{user.price}}</td>
+							<td>{{user.dept_name}}</td>
+							<td>{{user.total_hrs}}</td>
+							<td>{{user.total_price}}</td>
+						</tr>
+					</tbody>
+				</table> 
+				<dir-pagination-controls
+					max-size="10"
+					direction-links="true"
+					boundary-links="true" >
+				</dir-pagination-controls>
+
+				<canvas id="pie" class="chart chart-pie"
+  chart-data="data" chart-labels="labels" chart-series="series"
+</canvas>
+				
